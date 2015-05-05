@@ -10,19 +10,19 @@ class Ball {
   }
 
   close() {
-    return this.client.then((db) => db.close());
+    return this.db.then((db) => db.close());
   }
 
   register(Model, name) {
     const collectionName = name || pluralize(Model.name).toLowerCase();
     const collectionPromise = this.db.then((db) => {
-      return db.collection(collectionName)
+      return db.collection(collectionName);
     });
     const collection = new Collection(Model, collectionPromise);
     this.collections.set(Model, collection);
 
     return collection;
-  }  
+  }
 }
 
 module.exports = Ball;

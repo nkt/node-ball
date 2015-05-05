@@ -4,7 +4,7 @@
   "description": "MongoDB ODM",
   "main": "./src/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register",
+    "test": "mocha --compilers js:babel/register --require test/support/node",
     "prepublish": "babel -d lib/ src/"
   },
   "repository": {
