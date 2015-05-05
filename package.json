@@ -1,6 +1,6 @@
 {
   "name": "ball",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "MongoDB ODM",
   "main": "./src/index.js",
   "scripts": {
