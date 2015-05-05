@@ -1,0 +1,25 @@
+{
+  "name": "ball",
+  "version": "0.0.0",
+  "description": "MongoDB ODM",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "prepublish": "babel -d lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nkt/node-ball.git"
+  },
+  "author": "Nikita Gusakov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkt/node-ball/issues"
+  },
+  "homepage": "https://github.com/nkt/node-ball#readme",
+  "dependencies": {
+    "bluebird": "^2.9.25",
+    "mongodb": "^2.0.28",
+    "pluralize": "^1.1.2"
+  }
+}
